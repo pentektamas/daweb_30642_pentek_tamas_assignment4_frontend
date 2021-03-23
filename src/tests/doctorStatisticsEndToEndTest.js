@@ -5,7 +5,7 @@ const {openBrowser, goto, click, below, textBox, into, write, closeBrowser, scro
         await openBrowser();
         await goto("http://localhost:3000/");
         await click("Login");
-        await write("user11", into(textBox(below("Username"))));
+        await write("doctor1", into(textBox(below("Username"))));
         await write("1234", into(textBox(below("Password"))));
         await click("Login");
         await scrollDown();
